@@ -1,0 +1,14 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/bin/nodejs /usr/bin/firebase serve
+[debug] CLI Version:  3.2.0
+[debug] Platform:     linux
+[debug] Node Version: v6.9.1
+[debug] Time:         Sun Nov 27 2016 23:22:51 GMT+0800 (WITA)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /home/teofilus/node/pwa
+[info] Public Directory: public
+[info] 
+[info] Server listening at: http://localhost:5000

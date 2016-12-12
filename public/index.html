@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+    <title>Notes</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+<script src="bower_components/web-animations-js/web-animations.min.js"></script>
+<link rel="import" href="bower_components/platinum-sw/platinum-sw-elements.html">
+<link rel="import" href="bower_components/polymerfire/firebase-app.html">
+<link rel="import" href="note-app.html">
+
+  </head>
+  <body>
+  <platinum-sw-register
+    auto-register
+    skip-waiting
+    clients-claim
+    reload-on-install
+    href="sw-import.js">
+  <platinum-sw-cache
+      default-cache-strategy="networkFirst">
+  </platinum-sw-cache>
+</platinum-sw-register>
+
+<firebase-app
+    name="notes"
+    api-key="AIzaSyBvwgnJ7usjo-6-lV8WexcPkcOMR71Geg0"
+    auth-domain="study-3b6d7.firebaseapp.com"
+    database-url="https://study-3b6d7.firebaseio.com">
+</firebase-app>
+
+<note-app>
+  <dom-module id="note-app">
+  <template>Hello, note app!</template>
+  <script>
+    Polymer({
+      is: 'note-app'
+    });
+  </script>
+</dom-module>
+
+</note-app>
+  </body>
+</html>
